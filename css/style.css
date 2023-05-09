@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Contact */
+#contact {
+  display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#showcase h1 {
+  animation: animate1 1.5s forwards ease-in-out;
+  transform: translateY(-1200px);
+}
+@keyframes animate1 {
+  to {
+    transform: translateY(0);
+  }
+}
+#who {
+  display: flex;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+#who .container {
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+}
+
+#who .container h1 {
+  color: #f4f4f4;
+  text-align: center;
+}
+#who label {
+  display: block;
+  color: #f4f4f4;
+  padding: 1rem;
+}
+#who input {
+  width: 90%;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+#who input:focus {
+  border: none;
+  outline: none;
+}
+#who input[type="submit"] {
+  margin: 1rem;
+  margin-top: 2rem;
+  width: 20%;
+}
+#who .form-group {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#totalinterest,
+#payment,
+#per {
+  height: 40px;
+  background-color: #fff;
+  width: 90%;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+.title {
+  font-size: 1rem;
+  text-align: left;
+  color: #f4f4f4;
+  margin-left: 1rem;
+}
+
+.slider {
+  width: 100%;
+  margin: 50px auto;
+  position: relative;
+}
+.slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.slider .marks {
+  display: flex;
+  width: 90%;
+  padding: 0 10px;
+
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 20px;
+}
+.slider .marks span {
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.slider .marks span:first-child {
+  left: 35px;
+}
+.slider .marks span:last-child {
+  right: -10px;
+}
+.slider .marks span:not(:first-child):not(:last-child) {
+  position: relative;
+  left: 30px;
+  right: 40px;
+}
+
+/* typewriter */
+#showcase .lead::after {
+  content: " |";
+  animation-name: blink;
+  width: 280px;
+  animation-duration: 0.5s;
+  animation-iteration-count: Infinite;
+}
+@keyframes blink {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: #fff;
+  }
+}
+.social,
+.social a {
+  color: #fff;
+  padding: 0 10px;
+}
